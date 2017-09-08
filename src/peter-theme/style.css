@@ -817,6 +817,10 @@ h2 + .quote {
   margin: 2em 0;
 }
 
+.just-eat img {
+  width: 70%;
+}
+
 .thanks img {
   margin-top: 0.5em;
   width: 2em;

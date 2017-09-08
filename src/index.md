@@ -230,7 +230,7 @@ new PaymentRequest(methodData, details, options)
 <div class="container">
   <div>
     ![Chrome](images/chrome.png)
-    <p>Chrome desktop beta (v60+ with flag)</p>
+    <p>Chrome desktop v61+</p>
   </div>
   <div>
     ![Chrome for Android](images/chrome-android.png)
@@ -289,29 +289,51 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
-<!-- img-with-caption payment-gateways-->
-<!--### Payment Gateways-->
-<!--![Payment parties](images/web-payments-parties.png)-->
-<!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>-->
+-- img-with-header
 
-<!-- logos -->
-<!-- ### Supporters include... -->
-<!-- TODO switch this for a couple of individual examples e.g. Monzo? -->
-<!-- <div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
+![Safari Tech Preview](images/safari-tech-preview.jpg)
 
-<!-- img-with-header-->
-<!--![Polykart](images/polykart.png)-->
-<!--<div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>-->
-<!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>-->
+<div class="caption">[Not working yet](https://twitter.com/marcosc/status/906170462069071874) in Safari Tech Preview but officially [in development](https://webkit.org/status/#feature-payment-request)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-header
 
-### Real example: Monzo 
+### Monzo 
 
 ![Monzo Payment Request](images/monzo3.jpg)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- img-with-header
+
+TODO Samsung Shop demo from Winston?
+
+-- img-with-caption payment-gateways
+
+### Payment Gateways
+
+![Payment parties](images/web-payments-parties.png)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+<!-- img-with-header -->
+<!-- ![Polykart](images/polykart.png) -->
+<!-- <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div> -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
+
+--
+
+TODO Android Pay
+
+
+-- img-with-header just-eat
+
+![Just Eat](images/just-eat.svg)
+
+--
+
+Slides for Just Eat demo & explanation can go here?
 
 -- bg-marioblock bg-fade what-if
 
