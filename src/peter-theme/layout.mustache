@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="{{encoding}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#987fff">
+  <title>{{title}}</title>
+  <style type="text/css">
+    {{{style}}}
+  </style>
+  {{#options.watch}}
+    <script async src="http://localhost:35729/livereload.js"></script>
+  {{/options.watch}}
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png" type=”image/png">
+  <link rel="manifest" href="manifest.json">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@poshaughnessy">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{{options.description}}}">
+  <meta name="twitter:creator" content="@poshaughnessy">
+  <meta name="twitter:image" content="{{{options.image}}}">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{{options.url}}}" />
+  <meta property="og:image" content="{{{options.image}}}" />
+  <meta property="og:description" content="{{{options.description}}}" />
+</head>
+<body>
+  {{{slideshow}}}
+
+  <script src="lib/faye-browser-min.js"></script>
+  <script type="text/javascript">
+    {{{script}}}
+  </script>
+</body>
+</html>
