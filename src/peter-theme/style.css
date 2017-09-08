@@ -643,6 +643,10 @@ h2 + .quote {
   width: 75%;
 }
 
+#slide-1 .contact {
+  font-size: 0.9em;
+}
+
 .valign-top h2 {
   margin: 1em 0;
 }

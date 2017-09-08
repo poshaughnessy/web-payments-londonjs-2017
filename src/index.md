@@ -13,8 +13,8 @@ controls: true
 ### Introducing new browser APIs for easier online purchases
 
 <div class="contact">
-  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
-  <p class="social">[@samsunginternet](https://twitter.com/samsunginternet)</p>
+  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy), [@samsunginternet](https://twitter.com/samsunginternet)</p>
+  <p class="social">Feat. [@zfdesign](https://twitter.com/zfdesign), [@justeat_tech](https://twitter.com/justeat_tech)</p>
 </div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
@@ -309,6 +309,14 @@ new PaymentRequest(methodData, details, options)
 
 TODO Samsung Shop demo from Winston?
 
+-- img-with-header just-eat
+
+![Just Eat](images/just-eat.svg)
+
+--
+
+Slides for Just Eat demo & explanation can go here?
+
 -- img-with-caption payment-gateways
 
 ### Payment Gateways
@@ -325,15 +333,6 @@ TODO Samsung Shop demo from Winston?
 --
 
 TODO Android Pay
-
-
--- img-with-header just-eat
-
-![Just Eat](images/just-eat.svg)
-
---
-
-Slides for Just Eat demo & explanation can go here?
 
 -- bg-marioblock bg-fade what-if
 
