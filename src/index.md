@@ -238,6 +238,15 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+--
+
+```javascript
+TODO shipping change event
+  ...
+```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+  
 -- gold-coins bg-mariowall bg-fade-less
 
 ## Let's see where we can use it
@@ -332,13 +341,23 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+--
+
+[![Monzo tweet](images/monzo-tweet.png)](https://twitter.com/_dancannon/status/884840037120192512)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- img-with-header just-eat
 
 ![Just Eat](images/just-eat.svg)
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 --
 
 Slides for Just Eat demo & explanation can go here?
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- gold-coins bg-mariopipes bg-fade-less
 
@@ -350,11 +369,15 @@ Slides for Just Eat demo & explanation can go here?
 
 ![Android Pay](images/android-pay-logo-white.png)
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 --
 
 ```javascript
 TODO
 ```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-caption payment-gateways
 
@@ -427,7 +450,7 @@ Further resources
 
 -- thanks bg-mariohooray
 
-# Thanks!
+## Thanks! Questions?
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
 
