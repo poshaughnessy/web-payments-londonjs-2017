@@ -786,6 +786,13 @@ h2 + .quote {
   max-height: 60vh;
 }
 
+.pay-logos img {
+  box-sizing: border-box;
+  padding: 2em 1em;
+  max-height: 40vh;
+  vertical-align: middle;
+}
+
 .mobile-app-integrations img {
   max-height: 60vh;
 }

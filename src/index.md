@@ -57,13 +57,26 @@ controls: true
 
 <div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
 
+-- bg-marioblock bg-fade what-if four-images pay-logos
+
+### What if...
+
+![Samsung Pay](images/samsung-pay-logo-white.png)
+![Android Pay](images/android-pay-logo-white.png)
+![Apple Pay](images/apple-pay-logo-white.png)
+![PayPal](images/paypal-logo-white.svg)
+
+<div class="caption">You could use your favourite payment app, in an open standard way?</div>
+
+<div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
+
 -- bg-marioblock bg-fade what-if
 
 ### What if...
 
 ![Fingerprint scan](images/fingerprint-s8.png)
 
-<div class="caption">You could confirm the payment with your fingerprint or iris scan?</div>
+<div class="caption">You could simply confirm payment with your fingerprint or iris scan?</div>
 
 <div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
 
