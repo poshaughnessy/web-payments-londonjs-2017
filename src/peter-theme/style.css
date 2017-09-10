@@ -766,6 +766,18 @@ h2 + .quote {
   background-image: url(images/mariocoins-kent.jpg);
 }
 
+.slide.bg-mariowall:before {
+  background-image: url(images/mariowall-mdu2boy.jpg);
+}
+
+.slide.bg-mariocartridges:before {
+  background-image: url(images/mariocartridges-rapapu.jpg);
+}
+
+.slide.bg-mariopipes:before {
+  background-image: url(images/mariopipes-carnivillain.jpg);
+}
+
 .slide.bg-marioblock:before {
   background-image: url(images/marioblock-leandro.jpg);
 }

@@ -236,6 +236,12 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+-- gold-coins bg-mariowall bg-fade-less
+
+## Let's see where we can use it
+
+<div class="credit">[Phil Romans](https://www.flickr.com/photos/mdu2boy/512643409)</div>
+
 -- browser-support four-images
 
 ## Browser support
@@ -310,6 +316,12 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+-- gold-coins bg-mariocartridges bg-fade
+
+## Let's see some real examples
+
+<div class="credit">[Humberto Rodriguez](https://www.flickr.com/photos/rapapu/4862441304)</div>
+
 -- img-with-header
 
 ### Monzo 
@@ -318,10 +330,6 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- img-with-header
-
-TODO Samsung Shop demo from Winston?
-
 -- img-with-header just-eat
 
 ![Just Eat](images/just-eat.svg)
@@ -329,6 +337,12 @@ TODO Samsung Shop demo from Winston?
 --
 
 Slides for Just Eat demo & explanation can go here?
+
+-- gold-coins bg-mariopipes bg-fade-less
+
+## Let's dive deeper
+
+<div class="credit">[Neil Girling](https://www.flickr.com/photos/carnivillain/5810033092)</div>
 
 -- img-with-caption payment-gateways
 
