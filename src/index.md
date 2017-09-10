@@ -23,6 +23,8 @@ controls: true
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
 
+###😱
+
 -- bg-goomba valign-top
 
 ## 69% of shopping carts are abandoned
@@ -340,9 +342,19 @@ Slides for Just Eat demo & explanation can go here?
 
 -- gold-coins bg-mariopipes bg-fade-less
 
-## Let's dive deeper
+## Let's dive deeper...
 
 <div class="credit">[Neil Girling](https://www.flickr.com/photos/carnivillain/5810033092)</div>
+
+--
+
+![Android Pay](images/android-pay-logo-white.png)
+
+--
+
+```javascript
+TODO
+```
 
 -- img-with-caption payment-gateways
 
@@ -357,10 +369,6 @@ Slides for Just Eat demo & explanation can go here?
 <!-- <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div> -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
---
-
-TODO Android Pay
-
 -- bg-marioblock bg-fade what-if
 
 ## What's next?
@@ -371,7 +379,6 @@ TODO Android Pay
 
 ### More payment apps
 
-![Android Pay](images/android-pay.png)
 ![Samsung Pay](images/samsung-pay.png)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
@@ -406,7 +413,7 @@ TODO Android Pay
 
 These slides are at
 
-#### [bit.ly/web-payments-fullstack17](http://bit.ly/web-payments-fullstack17)
+#### [bit.ly/webpayments-londonjs-17](https://bit.ly/webpayments-londonjs-17)
 
 Further resources
 
@@ -424,15 +431,13 @@ Further resources
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
 
-Please leave feedback on this talk!
-
-[bit.ly/peter-londonjs17](https://bit.ly/peter-londonjs-17)
-
-<p style="margin-top: 2em;">Follow us for webby goodness!</p>
+<p style="margin-top: 2em;">Follow for more web stuff!</p>
 
 <div class="contact">
   <h3 class="social"> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
   <h3 class="social"> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
 </div>
+
+<p style="font-size: 0.9em;">Please leave me feedback on Meetup</p>
 
 <div class="credit">[Laurence Vagner](https://www.flickr.com/photos/redisdead/2165783016)</div>
