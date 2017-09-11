@@ -705,6 +705,10 @@ h2 + .quote {
   max-width: calc(20% - 1em);
 }
 
+.more-text ul li {
+  margin-bottom: 1em;
+}
+
 .logos h2 {
   margin-bottom: 1em;
 }

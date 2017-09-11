@@ -376,41 +376,6 @@ Slides for Just Eat demo & explanation can go here?
 
 <div class="credit">[Neil Girling](https://www.flickr.com/photos/carnivillain/5810033092)</div>
 
--- img-with-header
-
-![Android Pay](images/android-pay-logo-white.png)
-
-<div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
---
-
-![Native app integration](images/app-types.png)
-
-<div class="caption">From [w3.org/TR/payment-handler/](www.w3.org/TR/payment-handler/)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
---
-
-```javascript
-var methodData = [
-  {
-    supportedMethods: ['https://android.com/pay'],
-    data: {
-      // Merchant ID, environment etc.
-      // Payment method tokenisation params
-    }
-  }, 
-  ...
-];
-```
-
-<div class="caption">Requests a token from your payment gateway</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
 -- img-with-caption payment-gateways
 
 ### Payment Gateways
@@ -431,6 +396,49 @@ var methodData = [
 ![WePay docs screenshot](images/wepay-screenshot.png)
 
 <div class="caption">[developer.wepay.com/docs/mobile/payment-request-api](https://developer.wepay.com/docs/mobile/payment-request-api)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- img-with-header
+
+![Android Pay](images/android-pay-logo-white.png)
+
+<div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+![Native app integration](images/app-types.png)
+
+<div class="caption">From [w3.org/TR/payment-handler/](www.w3.org/TR/payment-handler/)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- more-text
+
+* Ensure payment gateway supports Android Pay tokens
+* Acquire key-pair to encrypt Android Pay response
+* Google recommend working with payment processor to obtain public key
+
+<div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
+
+--
+
+```javascript
+var methodData = [
+  {
+    supportedMethods: ['https://android.com/pay'],
+    data: {
+      // Merchant ID, environment etc.
+      // Payment method tokenisation params
+    }
+  }, 
+  ...
+];
+```
+
+<div class="caption">Requests a token from your payment gateway</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 

@@ -713,6 +713,10 @@ h2 + .quote {
   max-width: calc(20% - 1em);
 }
 
+.more-text ul li {
+  margin-bottom: 1em;
+}
+
 .logos h2 {
   margin-bottom: 1em;
 }
@@ -1184,19 +1188,44 @@ h2 + .quote {
     <section class="slide-content"><h2 id="let-s-dive-deeper-">Let&#39;s dive deeper...</h2>
 <div class="credit"><a href="https://www.flickr.com/photos/carnivillain/5810033092">Neil Girling</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-36">
+  <div class="slide hidden  img-with-caption payment-gateways" id="slide-36">
+    <section class="slide-content"><h3 id="payment-gateways">Payment Gateways</h3>
+<p><img src="images/web-payments-parties.png" alt="Payment parties"></p>
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div>
+
+<!-- img-with-header -->
+<!-- ![Polykart](images/polykart.png) -->
+<!-- <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div> -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
+  </div>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><h3 id="example-payment-gateway-wepay">Example payment gateway: WePay</h3>
+<p><img src="images/wepay-screenshot.png" alt="WePay docs screenshot"></p>
+<div class="caption"><a href="https://developer.wepay.com/docs/mobile/payment-request-api">developer.wepay.com/docs/mobile/payment-request-api</a></div>
+
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header" id="slide-38">
     <section class="slide-content"><p><img src="images/android-pay-logo-white.png" alt="Android Pay"></p>
 <div class="caption"><a href="http://bit.ly/payment-request-android-pay">bit.ly/payment-request-android-pay</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-37">
+  <div class="slide hidden" id="slide-39">
     <section class="slide-content"><p><img src="images/app-types.png" alt="Native app integration"></p>
 <div class="caption">From <a href="www.w3.org/TR/payment-handler/">w3.org/TR/payment-handler/</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-38">
+  <div class="slide hidden  more-text" id="slide-40">
+    <section class="slide-content"><ul>
+<li>Ensure payment gateway supports Android Pay tokens</li>
+<li>Acquire key-pair to encrypt Android Pay response</li>
+<li>Google recommend working with payment processor to obtain public key</li>
+</ul>
+<div class="caption"><a href="http://bit.ly/payment-request-android-pay">bit.ly/payment-request-android-pay</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-41">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> methodData = [
   {
     supportedMethods: [<span class="hljs-string">'https://android.com/pay'</span>],
@@ -1211,33 +1240,16 @@ h2 + .quote {
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-caption payment-gateways" id="slide-39">
-    <section class="slide-content"><h3 id="payment-gateways">Payment Gateways</h3>
-<p><img src="images/web-payments-parties.png" alt="Payment parties"></p>
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div>
-
-<!-- img-with-header -->
-<!-- ![Polykart](images/polykart.png) -->
-<!-- <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
-  </div>
-  <div class="slide hidden" id="slide-40">
-    <section class="slide-content"><h3 id="example-payment-gateway-wepay">Example payment gateway: WePay</h3>
-<p><img src="images/wepay-screenshot.png" alt="WePay docs screenshot"></p>
-<div class="caption"><a href="https://developer.wepay.com/docs/mobile/payment-request-api">developer.wepay.com/docs/mobile/payment-request-api</a></div>
-
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
-  </div>
-  <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-41">
+  <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-42">
     <section class="slide-content"><h2 id="what-s-next-">What&#39;s next?</h2>
 <div class="credit"><a href="https://www.flickr.com/photos/grunge/2829427342">Leandro Amato</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header mobile-app-integrations" id="slide-42">
+  <div class="slide hidden  img-with-header mobile-app-integrations" id="slide-43">
     <section class="slide-content"><h3 id="more-payment-apps">More payment apps</h3>
 <p><img src="images/samsung-pay.png" alt="Samsung Pay"></p>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header payment-handler-api" id="slide-43">
+  <div class="slide hidden  img-with-header payment-handler-api" id="slide-44">
     <section class="slide-content"><h3 id="payment-handler-api">Payment Handler API</h3>
 <p><img src="images/payment-handler-api.png" alt="Payment Handler API"></p>
 <div class="caption"><a href="http://bit.ly/payment-handler-api">bit.ly/payment-handler-api</a></div>
@@ -1252,13 +1264,13 @@ h2 + .quote {
 <!-- * Web Payments HTTP API 1.0 -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
-  <div class="slide hidden  bg-mariotoys and-more" id="slide-44">
+  <div class="slide hidden  bg-mariotoys and-more" id="slide-45">
     <section class="slide-content"><h2 id="and-more-">And more!</h2>
 <div class="caption"><a href="https://www.w3.org/Payments/WG/">www.w3.org/Payments/WG/</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/hawken/332539130">Hawken King</a></div></section>
   </div>
-  <div class="slide hidden  further-resources" id="slide-45">
+  <div class="slide hidden  further-resources" id="slide-46">
     <section class="slide-content"><p>These slides are at</p>
 <h4 id="-bit-ly-webpayments-londonjs-17-https-bit-ly-webpayments-londonjs-17-"><a href="https://bit.ly/webpayments-londonjs-17">bit.ly/webpayments-londonjs-17</a></h4>
 <p>Further resources</p>
@@ -1271,7 +1283,7 @@ h2 + .quote {
 </ul>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  thanks bg-mariohooray" id="slide-46">
+  <div class="slide hidden  thanks bg-mariohooray" id="slide-47">
     <section class="slide-content"><h2 id="thanks-questions-">Thanks! Questions?</h2>
 <p><img src="images/game-art/goldcoin/coin-spin.gif" alt="Spinning coin"></p>
 <p style="margin-top: 2em;">Follow for more web stuff!</p>
