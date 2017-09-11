@@ -118,6 +118,17 @@ controls: true
 
 --
 
+### Better than autofill
+
+* More accurate (avoid filling wrong fields!)
+* Browser provides form for you!
+* Optimised for mobile
+* Built-in validation
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
 ```javascript
 if (window.PaymentRequest) {
   // We're good to go...
@@ -392,13 +403,23 @@ TODO
 <!-- <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div> -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
+--
+
+### Example payment gateway: WePay
+
+![WePay docs screenshot](images/wepay-screenshot.png)
+
+<div class="caption">[developer.wepay.com/docs/mobile/payment-request-api](https://developer.wepay.com/docs/mobile/payment-request-api)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- bg-marioblock bg-fade what-if
 
 ## What's next?
 
 <div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
 
--- two-images mobile-app-integrations
+-- img-with-header mobile-app-integrations
 
 ### More payment apps
 
