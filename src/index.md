@@ -346,43 +346,20 @@ TODO shipping change event
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- gold-coins bg-mariocartridges bg-fade
-
-## Let's see some real examples
-
-<div class="credit">[Humberto Rodriguez](https://www.flickr.com/photos/rapapu/4862441304)</div>
-
--- img-with-header
-
-### Monzo 
-
-![Monzo Payment Request](images/monzo3.jpg)
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
---
-
-[![Monzo tweet](images/monzo-tweet.png)](https://twitter.com/_dancannon/status/884840037120192512)
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
--- img-with-header just-eat
-
-![Just Eat](images/just-eat.svg)
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
---
-
-Slides for Just Eat demo & explanation can go here?
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- gold-coins bg-mariopipes bg-fade-less
 
 ## Let's dive deeper...
 
 <div class="credit">[Neil Girling](https://www.flickr.com/photos/carnivillain/5810033092)</div>
+
+--
+
+### Payment Response
+
+![Payment response data format](images/payment-response.png)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-caption payment-gateways
 
@@ -426,8 +403,7 @@ Slides for Just Eat demo & explanation can go here?
 -- more-text
 
 * Ensure payment gateway supports Android Pay tokens
-* Acquire key-pair to encrypt Android Pay response
-* Google recommend working with payment processor to obtain public key
+* Acquire key-pair to encrypt Android Pay response (public key from payment processor)
 
 <div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
 
@@ -447,6 +423,52 @@ var methodData = [
 ```
 
 <div class="caption">Requests a token from your payment gateway</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- gold-coins bg-mariocartridges bg-fade
+
+## Let's see some real examples
+
+<div class="credit">[Humberto Rodriguez](https://www.flickr.com/photos/rapapu/4862441304)</div>
+
+-- img-with-header just-eat
+
+![Just Eat](images/just-eat.svg)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+Slides for Just Eat demo & explanation can go here?
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- img-with-header
+
+### Monzo 
+
+![Monzo Payment Request](images/monzo3.jpg)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+[![Monzo tweet](images/monzo-tweet.png)](https://twitter.com/_dancannon/status/884840037120192512)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- img-with-header
+
+### Get Your Guide
+
+![Get Your Guide Payment Request](images/get-your-guide.png)
+
+--
+
+#### &ldquo;Our only challenge was adjusting our back-end... we managed to add the API within 20 minutes and adjust the flow within another 2 hours&rdquo; 
+
+<div class="caption">[Get Your Guide](http://inside.getyourguide.com/blog/2016/10/31/payment-request-api/)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
