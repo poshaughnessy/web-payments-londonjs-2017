@@ -120,8 +120,8 @@ controls: true
 
 ### Better than autofill
 
-* More accurate (avoid filling wrong fields!)
-* Browser provides form for you!
+* More accurate
+* Form pre-built for you!
 * Optimised for mobile
 * Built-in validation
 
@@ -376,16 +376,46 @@ Slides for Just Eat demo & explanation can go here?
 
 <div class="credit">[Neil Girling](https://www.flickr.com/photos/carnivillain/5810033092)</div>
 
---
+-- img-with-header
 
 ![Android Pay](images/android-pay-logo-white.png)
+
+<div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+![Native app integration](images/app-types.png)
+
+<div class="caption">From [w3.org/TR/payment-handler/](www.w3.org/TR/payment-handler/)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 --
 
 ```javascript
-TODO
+var supportedInstruments = [
+  {
+    supportedMethods: ['https://android.com/pay'],
+    data: {
+      merchantId: '02510116604241796260',
+      environment: 'TEST',
+      // Credit Cards allowed via Android Pay
+      allowedCardNetworks: ['AMEX', 'MASTERCARD', 'VISA', 'DISCOVER'],
+      paymentMethodTokenizationParameters: {
+        tokenizationType: 'GATEWAY_TOKEN',
+        parameters: {
+          'gateway': 'stripe',
+          // Place your own Stripe publishable key here.
+          'stripe:publishableKey': 'pk_live_fD7ggZCtrB0vJNApRX5TyJ9T',
+          'stripe:version': '2016-07-06'
+        }
+      }
+    }
+  },
+  ...
+];
 ```
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
