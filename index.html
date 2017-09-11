@@ -1020,12 +1020,12 @@ h2 + .quote {
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden" id="slide-17">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Show the payment UI and handle the result</span>
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Show payment UI and handle result</span>
 
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
   .show()
   .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">paymentResponse</span>) </span>{
-    <span class="hljs-comment">// Send paymentResponse to server or gateway, then...</span>
+    <span class="hljs-comment">// Process paymentResponse via gateway, then...</span>
     paymentResponse.complete(<span class="hljs-string">'success'</span>);
   })
   .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
@@ -1197,27 +1197,18 @@ h2 + .quote {
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden" id="slide-38">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> supportedInstruments = [
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> methodData = [
   {
     supportedMethods: [<span class="hljs-string">'https://android.com/pay'</span>],
     data: {
-      merchantId: <span class="hljs-string">'02510116604241796260'</span>,
-      environment: <span class="hljs-string">'TEST'</span>,
-      <span class="hljs-comment">// Credit Cards allowed via Android Pay</span>
-      allowedCardNetworks: [<span class="hljs-string">'AMEX'</span>, <span class="hljs-string">'MASTERCARD'</span>, <span class="hljs-string">'VISA'</span>, <span class="hljs-string">'DISCOVER'</span>],
-      paymentMethodTokenizationParameters: {
-        tokenizationType: <span class="hljs-string">'GATEWAY_TOKEN'</span>,
-        parameters: {
-          <span class="hljs-string">'gateway'</span>: <span class="hljs-string">'stripe'</span>,
-          <span class="hljs-comment">// Place your own Stripe publishable key here.</span>
-          <span class="hljs-string">'stripe:publishableKey'</span>: <span class="hljs-string">'pk_live_fD7ggZCtrB0vJNApRX5TyJ9T'</span>,
-          <span class="hljs-string">'stripe:version'</span>: <span class="hljs-string">'2016-07-06'</span>
-        }
-      }
+      <span class="hljs-comment">// Merchant ID, environment etc.</span>
+      <span class="hljs-comment">// Payment method tokenisation params</span>
     }
-  },
+  }, 
   ...
 ];</code></pre>
+<div class="caption">Requests a token from your payment gateway</div>
+
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden  img-with-caption payment-gateways" id="slide-39">
