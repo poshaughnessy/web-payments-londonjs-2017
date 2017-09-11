@@ -490,6 +490,7 @@ These slides are at
 
 Further resources
 
+* [github.com/w3c/webpayments/wiki](https://github.com/w3c/webpayments/wiki)
 * [github.com/w3c/payment-request-info](https://github.com/w3c/payment-request-info)
 * [github.com/w3c/payment-request-info/wiki/FAQ](https://github.com/w3c/payment-request-info/wiki/FAQ)
 * [medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f](https://medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
@@ -504,13 +505,11 @@ Further resources
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
 
-<p style="margin-top: 2em;">Follow for more web stuff!</p>
-
 <div class="contact">
-  <h3 class="social"> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
-  <h3 class="social"> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
+  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy), [@samsunginternet](https://twitter.com/samsunginternet)</p>
+  <p class="social">Feat. [@zfdesign](https://twitter.com/zfdesign), [@justeat_tech](https://twitter.com/justeat_tech)</p>
 </div>
 
-<p style="font-size: 0.9em;">Please leave me feedback on Meetup</p>
+<p style="font-size: 0.9em;">Please leave us feedback on Meetup</p>
 
 <div class="credit">[Laurence Vagner](https://www.flickr.com/photos/redisdead/2165783016)</div>
