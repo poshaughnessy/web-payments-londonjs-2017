@@ -257,14 +257,39 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
---
+-- more-code
 
 ```javascript
-
-  ...
+  paymentRequest.addEventListener('shippingaddresschange', function(event) {    
+    // Say we check the address and we can offer these options:    
+    event.updateWith({  
+        shippingOptions: [  
+          {  
+            id: 'standard',  
+            label: 'Standard Shipping (5-7 Days)',  
+            amount: {value: '0', currency: 'GBP'}  
+          }, {  
+            id: 'express',  
+            label: 'Express Shipping (2-3 Days)',  
+            amount: {value: '3.50', currency: 'GBP'}  
+          }  
+        ],  
+      ...
+  
 ```
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+  
+--
+
+```javascript    
+  const paymentDetails = {    
+    // Or if we can't offer any shipping to this address
+    shippingOptions: [],  
+    ...
+  };  
+  event.updateWith(paymentDetails);  
+```
   
 -- gold-coins bg-mariowall bg-fade-less
 
