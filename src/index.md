@@ -5,7 +5,7 @@ theme: peter-theme
 themecolour: 111111
 url: https://poshaughnessy.github.io/web-payments-londonjs-2017/
 image: https://poshaughnessy.github.io/web-payments-londonjs-2017/images/preview.jpg
-controls: true
+controls: false
 --
 
 ![Web](images/game-art/web-goldcoins.svg)
@@ -256,40 +256,6 @@ new PaymentRequest(methodData, details, options)
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-options/](http://samsunginter.net/examples/socks-megastore/after-options/)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
--- more-code
-
-```javascript
-  paymentRequest.addEventListener('shippingaddresschange', function(event) {    
-    // Say we check the address and we can offer these options:    
-    event.updateWith({  
-        shippingOptions: [  
-          {  
-            id: 'standard',  
-            label: 'Standard Shipping (5-7 Days)',  
-            amount: {value: '0', currency: 'GBP'}  
-          }, {  
-            id: 'express',  
-            label: 'Express Shipping (2-3 Days)',  
-            amount: {value: '3.50', currency: 'GBP'}  
-          }  
-        ],  
-      ...
-  
-```
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-  
---
-
-```javascript    
-  const paymentDetails = {    
-    // Or if we can't offer any shipping to this address
-    shippingOptions: [],  
-    ...
-  };  
-  event.updateWith(paymentDetails);  
-```
   
 -- gold-coins bg-mariowall bg-fade-less
 
@@ -377,6 +343,60 @@ new PaymentRequest(methodData, details, options)
 ## Let's dive deeper...
 
 <div class="credit">[Neil Girling](https://www.flickr.com/photos/carnivillain/5810033092)</div>
+
+-- more-code
+
+```javascript
+  paymentRequest.addEventListener('shippingaddresschange', function(event) {    
+    // Say we check the address and we can offer these options:    
+    event.updateWith({  
+        shippingOptions: [  
+          {  
+            id: 'standard',  
+            label: 'Standard Shipping (5-7 Days)',  
+            amount: {value: '0', currency: 'GBP'}  
+          }, {  
+            id: 'express',  
+            label: 'Express Shipping (2-3 Days)',  
+            amount: {value: '3.50', currency: 'GBP'}  
+          }  
+        ],  
+      ...
+  
+```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+  
+--
+
+```javascript    
+  const paymentDetails = {    
+    // Or if we can't offer any shipping to this address
+    shippingOptions: [],  
+    ...
+  };  
+  event.updateWith(paymentDetails);  
+```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+  
+--
+
+```javascript
+if (paymentRequest.canMakePayment) {
+  paymentRequest.canMakePayment().then(result => {
+    if (result) {
+      // User has an active payment method
+    } else {
+      // No active payment method yet, but user can add one
+    }
+  }).catch(function(error) {
+    // Unable to determine
+  });
+}
+```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 --
 
