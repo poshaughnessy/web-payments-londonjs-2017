@@ -730,6 +730,7 @@ h2 + .quote {
   max-height: 5em;
   padding: 0 1em;
   margin-bottom: 0.5em;
+  vertical-align: middle;
 }
 
 .gold-coins img {
@@ -744,6 +745,10 @@ h2 + .quote {
 
 .and-more .caption {
   margin-top: 1.5em;
+}
+
+.and-more ul {
+  max-width: 70%;
 }
 
 .logos .pun {
@@ -859,6 +864,10 @@ h2 + .quote {
 
 .just-eat img {
   width: 70%;
+}
+
+.medium-clap img {
+  max-height: 50vh;
 }
 
 .thanks {
