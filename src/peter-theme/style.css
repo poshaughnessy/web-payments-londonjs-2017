@@ -717,6 +717,10 @@ h2 + .quote {
   margin-bottom: 1em;
 }
 
+.more-code code {
+  font-size: 1em;
+}
+
 .logos h2 {
   margin-bottom: 1em;
 }

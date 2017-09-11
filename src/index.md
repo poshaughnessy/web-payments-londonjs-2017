@@ -260,7 +260,7 @@ new PaymentRequest(methodData, details, options)
 --
 
 ```javascript
-TODO shipping change event
+
   ...
 ```
 
@@ -392,37 +392,88 @@ TODO shipping change event
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+<!-- -- -->
+<!-- ![Native app integration](images/app-types.png) -->
+<!-- <div class="caption">From [w3.org/TR/payment-handler/](www.w3.org/TR/payment-handler/)</div> -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
+
 --
 
-![Native app integration](images/app-types.png)
-
-<div class="caption">From [w3.org/TR/payment-handler/](www.w3.org/TR/payment-handler/)</div>
+![Android Pay flow](images/android-pay-flow.png)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- more-text
+-- img-with-header
 
-* Ensure payment gateway supports Android Pay tokens
-* Acquire key-pair to encrypt Android Pay response (public key from payment processor)
+#### Gateway Token
 
-<div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
+![Gateway token](images/android-pay-gateway-token.png)
 
---
+<div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- img-with-header
+
+#### Network Token
+
+![Network token](images/android-pay-network-token.png)
+
+<div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- more-code
 
 ```javascript
-var methodData = [
-  {
-    supportedMethods: ['https://android.com/pay'],
-    data: {
-      // Merchant ID, environment etc.
-      // Payment method tokenisation params
-    }
-  }, 
-  ...
-];
+var paymentMethod = {  
+  supportedMethods: ['https://android.com/pay'],
+  data: {  
+    merchantName: 'Android Pay Demo',
+    // merchant ID obtained from Google that maps to your origin
+    merchantId: '01234567890123456789',  
+    environment: 'TEST',  
+    allowedCardNetworks: ['AMEX', 'DISCOVER', 'MASTERCARD', 'VISA'],  
+    paymentMethodTokenizationParameters: {  
+      tokenizationType: 'GATEWAY_TOKEN',  
+      parameters: {  
+        'gateway': 'stripe',  
+        'stripe:publishableKey': 'xx_demo_xxxxxxxxxxxxxxxxxxxxxxxx',  
+        'stripe:version': '2016-07-06',  
+      },  
+    },  
+  },  
+};
 ```
 
-<div class="caption">Requests a token from your payment gateway</div>
+<div class="caption">Android Pay calls your processor and returns a token</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- more-code
+
+```javascript
+request.show().then(function(result) {
+    // POST the result to server
+    return fetch('/pay', {
+      method: 'POST',
+      body: JSON.stringify(result.toJSON()),
+      ...
+    }).then(function(res) {
+      if (res.status !== 200) {
+        throw 'Failure';
+      }
+      return res.json();      
+    }).then(function(response) {
+      if (response.success == true) {
+        return result.complete('success');
+      } else {
+        return result.complete('fail');
+      }
+    })
+    ...
+  });
+```
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
