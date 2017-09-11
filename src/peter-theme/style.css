@@ -660,6 +660,14 @@ h2 + .quote {
   flex-wrap: wrap;
 }
 
+#slide-1 img {
+  width: 60%;
+}
+
+#slide-1 img:first-of-type {
+  width: 40%;
+}
+
 #slide-1 h2 {
   font-size: 1.3em;
 }

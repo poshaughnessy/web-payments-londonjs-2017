@@ -92,6 +92,14 @@ controls: true
 
 --
 
+## &ldquo;A revolution in payments on the Web&rdquo;
+
+<div class="caption">Adrian Hope-Bailie</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
