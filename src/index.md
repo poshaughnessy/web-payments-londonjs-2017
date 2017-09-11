@@ -165,12 +165,12 @@ var details = {
 --
 
 ```javascript
-// Show the payment UI and handle the result
+// Show payment UI and handle result
 
 new PaymentRequest(methodData, details)
   .show()
   .then(function(paymentResponse) {
-    // Send paymentResponse to server or gateway, then...
+    // Process paymentResponse via gateway, then...
     paymentResponse.complete('success');
   })
   .catch(function(error) {
@@ -395,28 +395,19 @@ Slides for Just Eat demo & explanation can go here?
 --
 
 ```javascript
-var supportedInstruments = [
+var methodData = [
   {
     supportedMethods: ['https://android.com/pay'],
     data: {
-      merchantId: '02510116604241796260',
-      environment: 'TEST',
-      // Credit Cards allowed via Android Pay
-      allowedCardNetworks: ['AMEX', 'MASTERCARD', 'VISA', 'DISCOVER'],
-      paymentMethodTokenizationParameters: {
-        tokenizationType: 'GATEWAY_TOKEN',
-        parameters: {
-          'gateway': 'stripe',
-          // Place your own Stripe publishable key here.
-          'stripe:publishableKey': 'pk_live_fD7ggZCtrB0vJNApRX5TyJ9T',
-          'stripe:version': '2016-07-06'
-        }
-      }
+      // Merchant ID, environment etc.
+      // Payment method tokenisation params
     }
-  },
+  }, 
   ...
 ];
 ```
+
+<div class="caption">Requests a token from your payment gateway</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
