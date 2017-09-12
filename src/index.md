@@ -126,17 +126,6 @@ controls: false
 
 --
 
-### Better than autofill
-
-* More accurate
-* Form pre-built for you!
-* Optimised for mobile
-* Built-in validation
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
---
-
 ```javascript
 if (window.PaymentRequest) {
   // We're good to go...
@@ -257,6 +246,25 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
   
+--
+
+### Better than autofill
+
+* More accurate
+* Form pre-built for you!
+* Optimised for mobile
+* Built-in validation
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+## UX
+
+<button id="express-checkout">Express Checkout</button>
+
+<div class="caption">Could be a good way to integrate it, but up to you, test it out!</div>
+
 -- gold-coins bg-mariowall bg-fade-less
 
 ## Let's see where we can use it
