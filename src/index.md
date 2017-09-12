@@ -118,7 +118,10 @@ controls: false
 
 --
 
-<video src="videos/socks-megastore-simple.mp4" controls></video>
+<video controls>
+  <source src="videos/socks-megastore-simple.mp4"/>
+  <source src="videos/socks-megastore-simple.webm"/>
+</video>
 
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/)</div>
 
@@ -240,7 +243,10 @@ new PaymentRequest(methodData, details, options)
 
 --
 
-<video src="videos/socks-megastore-options.mp4" controls></video>
+<video controls>
+  <source src="videos/socks-megastore-options.mp4"/>
+  <source src="videos/socks-megastore-options.webm">  
+</video>
 
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-options/](http://samsunginter.net/examples/socks-megastore/after-options/)</div>
 
@@ -568,6 +574,18 @@ let method = [{
 <div class="caption">Demo from [Zlatin Ivanov](https://twitter.com/zfdesign)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+<video controls>
+  <source src="videos/just-eat-demo.mp4"/>
+  <source src="videos/just-eat-demo.webm"/>
+</video>
+
+<div class="caption">Just Eat's prototype Payment Request integration demo'd by [Zlatin Ivanov](https://twitter.com/zfdesign)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 
 -- img-with-header
 
