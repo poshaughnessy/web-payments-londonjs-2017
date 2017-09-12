@@ -463,23 +463,24 @@ WePay.wallet.beginTokenization(...);
 
 -- img-with-header
 
-#### Gateway Token
+![Android Pay tokens explanation](images/android-pay-tokens-explanation.png) 
 
-![Gateway token](images/android-pay-gateway-token.png)
+<div class="caption">[developer.vantiv.com/docs/DOC-1689](https://developer.vantiv.com/docs/DOC-1689)</div>
 
-<div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
--- img-with-header
-
-#### Network Token
-
-![Network token](images/android-pay-network-token.png)
-
-<div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div>
+<div class="caption">("PAN" = Primary Account N​umber, the number embossed on your card)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+<!-- -- img-with-header -->
+<!-- #### Gateway Token -->
+<!-- ![Gateway token](images/android-pay-gateway-token.png) -->
+<!-- <div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div> -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
+<!-- -- img-with-header -->
+<!-- #### Network Token -->
+<!-- ![Network token](images/android-pay-network-token.png) -->
+<!-- <div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div> -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
 -- more-code
 
