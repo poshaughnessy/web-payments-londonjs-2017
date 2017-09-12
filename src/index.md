@@ -546,6 +546,26 @@ request.show().then(function(result) {
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+--
+
+```javascript
+let method = [{
+  supportedMethods: ['https://apple.com/apple-pay'],
+  data: {
+    supportedNetworks: [
+      'amex', 'discover', 'masterCard', 'visa'
+    ],
+    countryCode: 'US',
+    validationEndpoint: '/applepay/validate/',
+    merchantIdentifier: 'merchant.com.agektmr.payment'
+  }
+}];
+```
+
+<div class="caption">[github.com/GoogleChrome/appr-wrapper](https://github.com/GoogleChrome/appr-wrapper)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- gold-coins bg-mariocartridges bg-fade
 
 ## Let's see some real examples
