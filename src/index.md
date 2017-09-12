@@ -578,12 +578,6 @@ let method = [{
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
---
-
-Slides for Just Eat demo & explanation can go here?
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
 -- img-with-header
 
 ### Monzo 
@@ -677,7 +671,7 @@ return Promise.all([
 
 ![Payment Handler flag in Chrome](images/payment-handler-chrome.jpg)
 
-<div class="caption">Currently behind flags in Chrome for Android</div>
+<div class="caption">[Currently behind flags in Chrome for Android](https://lists.w3.org/Archives/Public/public-payments-wg/2017Jun/0006.html)</div>
 
 -- img-with-header
 
