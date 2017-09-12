@@ -1,11 +1,11 @@
 title: Web Payments - London JS, Sep 2017
-description: Web Payments - Introducing new browser APIs for easier online purchases
+description: Introducing new browser APIs for easier online purchases
 output: public/index.html
 theme: peter-theme
 themecolour: 111111
 url: https://poshaughnessy.github.io/web-payments-londonjs-2017/
 image: https://poshaughnessy.github.io/web-payments-londonjs-2017/images/preview.jpg
-controls: false
+controls: true
 --
 
 ![Web](images/game-art/web-goldcoins.svg)
