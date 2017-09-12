@@ -252,8 +252,9 @@ new PaymentRequest(methodData, details, options)
 
 * More accurate
 * Form pre-built for you!
-* Optimised for mobile
 * Built-in validation
+* Optimised for mobile
+* 3rd party apps
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
@@ -277,16 +278,16 @@ new PaymentRequest(methodData, details, options)
 
 <div class="container">
   <div>
-    ![Chrome](images/chrome.png)
-    <p>Chrome desktop v61+</p>
-  </div>
-  <div>
     ![Chrome for Android](images/chrome-android.png)
     <p>Chrome for Android v53+</p>
   </div>
   <div>
     ![Samsung Internet](images/sbrowser5.4.png)
     <p>Samsung Internet v5.0+</p>
+  </div>
+  <div>
+    ![Chrome](images/chrome.png)
+    <p>Chrome desktop v61+</p>
   </div>
   <div>
     ![Edge Preview](images/edge.png)
