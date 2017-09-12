@@ -576,6 +576,10 @@ let method = [{
 
 ![Just Eat](images/just-eat.svg)
 
+<img src="images/game-art/goldcoin/coin-spin.gif" style="width: 2em" alt="Spinning coin"/>
+
+<div class="caption">Demo from [Zlatin Ivanov](https://twitter.com/zfdesign)</div>
+
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-header
