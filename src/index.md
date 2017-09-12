@@ -672,13 +672,19 @@ return Promise.all([
 
 <div class="credit">[brave.com](https://www.brave.com/)</div>
 
+-- img-with-header
+
+[![Brendan Eich tweet](images/brendan-eich-tweet.png)](https://twitter.com/BrendanEich/status/907625611652325376)
+
+<div class="caption">BAT = Basic Attention Token - [basicattentiontoken.org](https://basicattentiontoken.org/)</div>
+
 -- img-with-header medium-clap
 
-### Micropayments?
+#### Beyond the ad-driven Web
 
 ![Medium clap](images/mediumclap60fps.gif)
 
-<div class="caption">[Imagine something similar for throwing a few pennies to the author?](https://twitter.com/poshaughnessy/status/898061485645103105)</div> 
+<div class="caption">[Medium's new clap feature. Imagine something similar for throwing a few pennies!](https://twitter.com/poshaughnessy/status/898061485645103105)</div> 
 
 <div class="credit">[Liam Murphy](https://dribbble.com/lemurf)</div>
 
