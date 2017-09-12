@@ -561,6 +561,10 @@ pre .xml .cdata {
   max-height: calc(100vh - 8em);
 }
 
+.img-with-header-and-caption img {
+  max-height: calc(100vh - 10em);
+}
+
 .slide .pun {
   color: #c4c3f5;
   font-size: 1em;

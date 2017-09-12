@@ -631,32 +631,31 @@ Slides for Just Eat demo & explanation can go here?
 -- more-code
 
 ```javascript
-// Service worker
-self.addEventListener('paymentrequest', function(paymentrequestEvent) {
+// With your service worker registration
+return Promise.all([
+  registration.paymentManager.instruments.set(
+    "dc2de27a-ca5e-4fbd-883e-b6ded6c69d4f",
+    {
+      name: "Visa ending ****4756",
+      enabledMethods: ["basic-card"]
+    }),
 
-  paymentrequestEvent.respondWith(new Promise(function(resolve, reject) {
-
-      // Retrieve payment card options
-      var optionIds = paymentrequestEvent.data.optionId.split(';');
-
-      // Construct basic card data from optionIds 
-      var basicCardResponse = {...};
-
-      // Callback Promise
-      resolve(basicCardResponse);
-
-  }));
+  registration.paymentManager.instruments.set(
+    "c8126178-3bba-4d09-8f00-0771bcfd3b11",
+    {
+      name: "My Bob Pay Account: john@example.com",
+      enabledMethods: ["https://bobpay.com/"]
+    })
+]);
 ```
 
-<div class="caption">It should be basically like this, but...</div>
+<div class="caption">[w3c.github.io/payment-handler/#register-example](https://w3c.github.io/payment-handler/#register-example)</div>
 
 -- img-with-header
 
-![Payment Handler not working](images/payment-handler-not-working.png)
+![Payment Handler flag in Chrome](images/payment-handler-chrome.jpg)
 
-<div class="caption">[github.com/SamsungInternet/examples/tree/payment-handler/payment-handler](github.com/SamsungInternet/examples/tree/payment-handler/payment-handler)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+<div class="caption">Currently behind flags in Chrome for Android</div>
 
 -- img-with-header
 
@@ -678,15 +677,25 @@ self.addEventListener('paymentrequest', function(paymentrequestEvent) {
 
 -- bg-mariotoys and-more
 
-## And more!
+Gift cards / coupons?
 
-* Gift cards / coupons?
-* Credentials/tokenisation standardisation?
-* Probably other cool stuff!
+Tokenisation standardisation?
+
+## And more!
 
 <div class="caption">[www.w3.org/Payments/WG/](https://www.w3.org/Payments/WG/)</div>
 
 <div class="credit">[Hawken King](https://www.flickr.com/photos/hawken/332539130)</div>
+
+-- img-with-header-and-caption
+
+### Web Auth
+
+![Web Auth spec](images/web-auth.png)
+
+<div class="caption">[w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- further-resources
 
