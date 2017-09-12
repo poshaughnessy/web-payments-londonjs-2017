@@ -702,6 +702,7 @@ h2 + .quote {
 
 .payment-gateways img {
   background: #fff;
+  box-sizing: border-box;
   padding: 0.5em 2em;
   border-radius: 1em;
 }
@@ -733,6 +734,14 @@ h2 + .quote {
   font-size: 1em;
 }
 
+.more-code .caption {
+  font-size: 0.6em;
+}
+
+.quote h4 {
+  line-height: 1.6em;
+}
+
 .logos h2 {
   margin-bottom: 1em;
 }
@@ -755,8 +764,12 @@ h2 + .quote {
   max-height: 2.2em;
 }
 
+.and-more h2 {
+  margin-top: 1em;
+}
+
 .and-more .caption {
-  margin-top: 1.5em;
+  margin-top: 3em;
 }
 
 .and-more ul {
@@ -894,17 +907,22 @@ h2 + .quote {
   max-height: 50vh;
 }
 
-.thanks {
-  font-size: 0.9em;
-}
-
 .thanks img {
-  margin-top: 1em;
+  margin-top: 2em;
   width: 2em;
 }
 
 .thanks .contact {
-  margin: 1em 0 2em;
+  font-size: 1em;
+  margin: 1.5em 0 1.5em;
+}
+
+.thanks .social {
+  margin-bottom: 1em;
+}
+
+.further-resources h3 {
+  margin-bottom: 2em;
 }
 
 .further-resources h4 {
@@ -955,13 +973,13 @@ h2 + .quote {
 <h3 id="-">😱</h3>
 </section>
   </div>
-  <div class="slide hidden  bg-goomba valign-top" id="slide-3">
+  <div class="slide hidden  bg-goomba" id="slide-3">
     <section class="slide-content"><h2 id="69-of-shopping-carts-are-abandoned">69% of shopping carts are abandoned</h2>
 <div class="caption">Source: <a href="https://baymard.com/lists/cart-abandonment-rate">Baymard Institute</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/flavouz/5086859227">Flavio Ensiki</a></div></section>
   </div>
-  <div class="slide hidden  bg-booghost valign-top" id="slide-4">
+  <div class="slide hidden  bg-booghost" id="slide-4">
     <section class="slide-content"><h2 id="84-abandonment-rate-on-mobile">84% abandonment rate on mobile</h2>
 <div class="caption">Source: <a href="https://econsultancy.com/blog/64343-checkout-abandonment-mobile-ux-examples-to-help-boost-conversions/">Cloud.IQ via econsultancy.com</a></div>
 
@@ -1166,7 +1184,7 @@ h2 + .quote {
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden  browser-support three-images" id="slide-27">
-    <section class="slide-content"><h3 id="also-in-the-working-group-">Also in the Working Group...</h3>
+    <section class="slide-content"><h4 id="also-in-the-working-group-">Also in the Working Group...</h4>
 <div class="container">
   <div>
     <img src="images/firefox.png" alt="Firefox">
@@ -1241,7 +1259,7 @@ h2 + .quote {
     <span class="hljs-keyword">if</span> (result) {
       <span class="hljs-comment">// User has an active payment method</span>
     } <span class="hljs-keyword">else</span> {
-      <span class="hljs-comment">// No active payment method yet, but user can add one</span>
+      <span class="hljs-comment">// No active payment method yet, but user can add</span>
     }
   }).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
     <span class="hljs-comment">// Unable to determine</span>
@@ -1254,7 +1272,7 @@ h2 + .quote {
 <p><img src="images/payment-response.png" alt="Payment response data format"></p>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-caption payment-gateways" id="slide-36">
+  <div class="slide hidden  img-with-header payment-gateways" id="slide-36">
     <section class="slide-content"><p><img src="images/web-payments-parties.png" alt="Payment parties"></p>
 <div class="caption">Payment Gateways / Payment Processors / Payment Service Providers (PSPs)</div>
 
@@ -1308,49 +1326,36 @@ h2 + .quote {
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
   <div class="slide hidden  more-code" id="slide-41">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> paymentMethod = {  
-  supportedMethods: [<span class="hljs-string">'https://android.com/pay'</span>],
-  data: {  
-    merchantName: <span class="hljs-string">'Android Pay Demo'</span>,
-    <span class="hljs-comment">// merchant ID obtained from Google that maps to your origin</span>
-    merchantId: <span class="hljs-string">'01234567890123456789'</span>,  
-    environment: <span class="hljs-string">'TEST'</span>,  
-    allowedCardNetworks: [<span class="hljs-string">'AMEX'</span>, <span class="hljs-string">'DISCOVER'</span>, <span class="hljs-string">'MASTERCARD'</span>, <span class="hljs-string">'VISA'</span>],  
-    paymentMethodTokenizationParameters: {  
-      tokenizationType: <span class="hljs-string">'GATEWAY_TOKEN'</span>,  
-      parameters: {  
-        <span class="hljs-string">'gateway'</span>: <span class="hljs-string">'stripe'</span>,  
-        <span class="hljs-string">'stripe:publishableKey'</span>: <span class="hljs-string">'xx_demo_xxxxxxxxxxxxxxxxxxxxxxxx'</span>,  
-        <span class="hljs-string">'stripe:version'</span>: <span class="hljs-string">'2016-07-06'</span>,  
-      },  
-    },  
-  },  
-};</code></pre>
+    <section class="slide-content"><pre><code class="lang-javascript">supportedMethods: [<span class="hljs-string">'https://android.com/pay'</span>],
+data: {  
+  merchantName: <span class="hljs-string">'Android Pay Demo'</span>,
+  <span class="hljs-comment">// merchant ID obtained from Google that maps to your origin</span>
+  merchantId: <span class="hljs-string">'01234567890123456789'</span>,  
+  environment: <span class="hljs-string">'TEST'</span>,  
+  allowedCardNetworks: [<span class="hljs-string">'AMEX'</span>, <span class="hljs-string">'DISCOVER'</span>, <span class="hljs-string">'MASTERCARD'</span>, <span class="hljs-string">'VISA'</span>],  
+  paymentMethodTokenizationParameters: {  
+    tokenizationType: <span class="hljs-string">'GATEWAY_TOKEN'</span>,  
+    parameters: {  
+      <span class="hljs-string">'gateway'</span>: <span class="hljs-string">'stripe'</span>,  
+      <span class="hljs-string">'stripe:publishableKey'</span>: <span class="hljs-string">'xx_demo_xxxxxxxxxxxxxxxxxxxxxxxx'</span>,  
+      <span class="hljs-string">'stripe:version'</span>: <span class="hljs-string">'2016-07-06'</span>,  
+    }  
+  }  
+}</code></pre>
 <div class="caption">Android Pay calls your processor and returns a token</div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  more-code" id="slide-42">
+  <div class="slide hidden" id="slide-42">
     <section class="slide-content"><pre><code class="lang-javascript">request.show().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
     <span class="hljs-comment">// POST the result to server</span>
     <span class="hljs-keyword">return</span> fetch(<span class="hljs-string">'/pay'</span>, {
       method: <span class="hljs-string">'POST'</span>,
       body: <span class="hljs-built_in">JSON</span>.stringify(result.toJSON()),
       ...
-    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-      <span class="hljs-keyword">if</span> (res.status !== <span class="hljs-number">200</span>) {
-        <span class="hljs-keyword">throw</span> <span class="hljs-string">'Failure'</span>;
-      }
-      <span class="hljs-keyword">return</span> res.json();      
-    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>) </span>{
-      <span class="hljs-keyword">if</span> (response.success == <span class="hljs-literal">true</span>) {
-        <span class="hljs-keyword">return</span> result.complete(<span class="hljs-string">'success'</span>);
-      } <span class="hljs-keyword">else</span> {
-        <span class="hljs-keyword">return</span> result.complete(<span class="hljs-string">'fail'</span>);
-      }
     })
-    ...
-  });</code></pre>
+    <span class="hljs-comment">// Then check response status &amp; JSON &amp;</span>
+    <span class="hljs-comment">// call result.complete() with 'success' / 'fail'</span></code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden  img-with-header" id="slide-43">
@@ -1401,7 +1406,7 @@ h2 + .quote {
 <p><img src="images/get-your-guide.png" alt="Get Your Guide Payment Request"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-50">
+  <div class="slide hidden  quote" id="slide-50">
     <section class="slide-content"><h4 id="-ldquo-our-only-challenge-was-adjusting-our-back-end-we-managed-to-add-the-api-within-20-minutes-and-adjust-the-flow-within-another-2-hours-rdquo-">&ldquo;Our only challenge was adjusting our back-end... we managed to add the API within 20 minutes and adjust the flow within another 2 hours&rdquo;</h4>
 <div class="caption"><a href="http://inside.getyourguide.com/blog/2016/10/31/payment-request-api/">Get Your Guide</a></div>
 
@@ -1409,7 +1414,7 @@ h2 + .quote {
   </div>
   <div class="slide hidden  logos" id="slide-51">
     <section class="slide-content"><h3 id="also-using-payment-request">Also using Payment Request</h3>
-<p><img src="images/washingtonpost-white.png" alt="Washington Post"> <img src="images/groupon-white.png" alt="Groupon"> <img src="images/wwf.png" alt="WWF"> <img src="images/jdsports.png" alt="JD Sports"> <img src="images/nivea-white.png" alt="Nivea"></p>
+<p><img src="images/washingtonpost-white.png" alt="Washington Post"> <img src="images/groupon-white.png" alt="Groupon"> <img src="images/wwf-white-outline.png" alt="WWF"> <img src="images/jdsports.png" alt="JD Sports"> <img src="images/nivea-white.png" alt="Nivea"></p>
 </section>
   </div>
   <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-52">
@@ -1472,8 +1477,8 @@ h2 + .quote {
 <div class="credit"><a href="https://dribbble.com/lemurf">Liam Murphy</a></div></section>
   </div>
   <div class="slide hidden  bg-mariotoys and-more" id="slide-59">
-    <section class="slide-content"><p>Gift cards / coupons?</p>
-<p>Tokenisation standardisation?</p>
+    <section class="slide-content"><h3 id="gift-cards-coupons-">Gift cards / coupons?</h3>
+<h3 id="tokenisation-standardisation-">Tokenisation standardisation?</h3>
 <h2 id="and-more-">And more!</h2>
 <div class="caption"><a href="https://www.w3.org/Payments/WG/">www.w3.org/Payments/WG/</a></div>
 
@@ -1488,7 +1493,7 @@ h2 + .quote {
   </div>
   <div class="slide hidden  further-resources" id="slide-61">
     <section class="slide-content"><p>These slides are at</p>
-<h4 id="-bit-ly-webpayments-londonjs-17-https-bit-ly-webpayments-londonjs-17-"><a href="https://bit.ly/webpayments-londonjs-17">bit.ly/webpayments-londonjs-17</a></h4>
+<h3 id="-bit-ly-webpayments-londonjs-17-https-bit-ly-webpayments-londonjs-17-"><a href="https://bit.ly/webpayments-londonjs-17">bit.ly/webpayments-londonjs-17</a></h3>
 <p>Further resources</p>
 <ul>
 <li><a href="https://github.com/w3c/webpayments/wiki">github.com/w3c/webpayments/wiki</a></li>
@@ -1501,7 +1506,7 @@ h2 + .quote {
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden  thanks bg-mariohooray" id="slide-62">
-    <section class="slide-content"><h2 id="thanks-questions-">Thanks! Questions?</h2>
+    <section class="slide-content"><h3 id="thanks-questions-comments-">Thanks! Questions? Comments?</h3>
 <p><img src="images/game-art/goldcoin/coin-spin.gif" alt="Spinning coin"></p>
 <div class="contact">
   <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a>, <a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>

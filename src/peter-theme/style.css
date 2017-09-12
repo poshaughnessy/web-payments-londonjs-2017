@@ -694,6 +694,7 @@ h2 + .quote {
 
 .payment-gateways img {
   background: #fff;
+  box-sizing: border-box;
   padding: 0.5em 2em;
   border-radius: 1em;
 }
@@ -725,6 +726,14 @@ h2 + .quote {
   font-size: 1em;
 }
 
+.more-code .caption {
+  font-size: 0.6em;
+}
+
+.quote h4 {
+  line-height: 1.6em;
+}
+
 .logos h2 {
   margin-bottom: 1em;
 }
@@ -747,8 +756,12 @@ h2 + .quote {
   max-height: 2.2em;
 }
 
+.and-more h2 {
+  margin-top: 1em;
+}
+
 .and-more .caption {
-  margin-top: 1.5em;
+  margin-top: 3em;
 }
 
 .and-more ul {
@@ -886,17 +899,22 @@ h2 + .quote {
   max-height: 50vh;
 }
 
-.thanks {
-  font-size: 0.9em;
-}
-
 .thanks img {
-  margin-top: 1em;
+  margin-top: 2em;
   width: 2em;
 }
 
 .thanks .contact {
-  margin: 1em 0 2em;
+  font-size: 1em;
+  margin: 1.5em 0 1.5em;
+}
+
+.thanks .social {
+  margin-bottom: 1em;
+}
+
+.further-resources h3 {
+  margin-bottom: 2em;
 }
 
 .further-resources h4 {

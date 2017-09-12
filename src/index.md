@@ -25,7 +25,7 @@ controls: false
 
 ###😱
 
--- bg-goomba valign-top
+-- bg-goomba
 
 ## 69% of shopping carts are abandoned
 
@@ -33,7 +33,7 @@ controls: false
 
 <div class="credit">[Flavio Ensiki](https://www.flickr.com/photos/flavouz/5086859227)</div>
 
--- bg-booghost valign-top
+-- bg-booghost
 
 ## 84% abandonment rate on mobile
 
@@ -301,7 +301,7 @@ new PaymentRequest(methodData, details, options)
 
 -- browser-support three-images
 
-### Also in the Working Group...
+#### Also in the Working Group...
 
 <div class="container">
   <div>
@@ -397,7 +397,7 @@ if (paymentRequest.canMakePayment) {
     if (result) {
       // User has an active payment method
     } else {
-      // No active payment method yet, but user can add one
+      // No active payment method yet, but user can add
     }
   }).catch(function(error) {
     // Unable to determine
@@ -415,7 +415,7 @@ if (paymentRequest.canMakePayment) {
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- img-with-caption payment-gateways
+-- img-with-header payment-gateways
 
 ![Payment parties](images/web-payments-parties.png)
 
@@ -484,32 +484,30 @@ WePay.wallet.beginTokenization(...);
 
 -- more-code
 
-```javascript
-var paymentMethod = {  
-  supportedMethods: ['https://android.com/pay'],
-  data: {  
-    merchantName: 'Android Pay Demo',
-    // merchant ID obtained from Google that maps to your origin
-    merchantId: '01234567890123456789',  
-    environment: 'TEST',  
-    allowedCardNetworks: ['AMEX', 'DISCOVER', 'MASTERCARD', 'VISA'],  
-    paymentMethodTokenizationParameters: {  
-      tokenizationType: 'GATEWAY_TOKEN',  
-      parameters: {  
-        'gateway': 'stripe',  
-        'stripe:publishableKey': 'xx_demo_xxxxxxxxxxxxxxxxxxxxxxxx',  
-        'stripe:version': '2016-07-06',  
-      },  
-    },  
-  },  
-};
+```javascript 
+supportedMethods: ['https://android.com/pay'],
+data: {  
+  merchantName: 'Android Pay Demo',
+  // merchant ID obtained from Google that maps to your origin
+  merchantId: '01234567890123456789',  
+  environment: 'TEST',  
+  allowedCardNetworks: ['AMEX', 'DISCOVER', 'MASTERCARD', 'VISA'],  
+  paymentMethodTokenizationParameters: {  
+    tokenizationType: 'GATEWAY_TOKEN',  
+    parameters: {  
+      'gateway': 'stripe',  
+      'stripe:publishableKey': 'xx_demo_xxxxxxxxxxxxxxxxxxxxxxxx',  
+      'stripe:version': '2016-07-06',  
+    }  
+  }  
+}
 ```
 
 <div class="caption">Android Pay calls your processor and returns a token</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- more-code
+--
 
 ```javascript
 request.show().then(function(result) {
@@ -518,20 +516,9 @@ request.show().then(function(result) {
       method: 'POST',
       body: JSON.stringify(result.toJSON()),
       ...
-    }).then(function(res) {
-      if (res.status !== 200) {
-        throw 'Failure';
-      }
-      return res.json();      
-    }).then(function(response) {
-      if (response.success == true) {
-        return result.complete('success');
-      } else {
-        return result.complete('fail');
-      }
     })
-    ...
-  });
+    // Then check response status & JSON &
+    // call result.complete() with 'success' / 'fail'
 ```
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
@@ -602,7 +589,7 @@ let method = [{
 
 ![Get Your Guide Payment Request](images/get-your-guide.png)
 
---
+-- quote
 
 #### &ldquo;Our only challenge was adjusting our back-end... we managed to add the API within 20 minutes and adjust the flow within another 2 hours&rdquo; 
 
@@ -614,7 +601,7 @@ let method = [{
 
 ### Also using Payment Request
 
-![Washington Post](images/washingtonpost-white.png) ![Groupon](images/groupon-white.png) ![WWF](images/wwf.png) ![JD Sports](images/jdsports.png) ![Nivea](images/nivea-white.png)
+![Washington Post](images/washingtonpost-white.png) ![Groupon](images/groupon-white.png) ![WWF](images/wwf-white-outline.png) ![JD Sports](images/jdsports.png) ![Nivea](images/nivea-white.png)
 
 -- bg-marioblock bg-fade what-if
 
@@ -697,9 +684,9 @@ return Promise.all([
 
 -- bg-mariotoys and-more
 
-Gift cards / coupons?
+### Gift cards / coupons?
 
-Tokenisation standardisation?
+### Tokenisation standardisation?
 
 ## And more!
 
@@ -721,7 +708,7 @@ Tokenisation standardisation?
 
 These slides are at
 
-#### [bit.ly/webpayments-londonjs-17](https://bit.ly/webpayments-londonjs-17)
+### [bit.ly/webpayments-londonjs-17](https://bit.ly/webpayments-londonjs-17)
 
 Further resources
 
@@ -736,7 +723,7 @@ Further resources
 
 -- thanks bg-mariohooray
 
-## Thanks! Questions?
+### Thanks! Questions? Comments?
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
 
