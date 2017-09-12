@@ -130,7 +130,7 @@ controls: false
 if (window.PaymentRequest) {
   // We're good to go...
 } else {
-  // Alas! Use your legacy checkout form...
+  // Alas! Use your traditional checkout form...
 }
 ```
 
@@ -167,7 +167,7 @@ var details = {
 new PaymentRequest(methodData, details)
   .show()
   .then(function(paymentResponse) {
-    // Process paymentResponse via gateway/processor, then...
+    // Process via gateway/processor, then...
     paymentResponse.complete('success');
   })
   .catch(function(error) {

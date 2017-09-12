@@ -1033,7 +1033,7 @@ h2 + .quote {
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.PaymentRequest) {
   <span class="hljs-comment">// We're good to go...</span>
 } <span class="hljs-keyword">else</span> {
-  <span class="hljs-comment">// Alas! Use your legacy checkout form...</span>
+  <span class="hljs-comment">// Alas! Use your traditional checkout form...</span>
 }</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
@@ -1058,7 +1058,7 @@ h2 + .quote {
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
   .show()
   .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">paymentResponse</span>) </span>{
-    <span class="hljs-comment">// Process paymentResponse via gateway/processor, then...</span>
+    <span class="hljs-comment">// Process via gateway/processor, then...</span>
     paymentResponse.complete(<span class="hljs-string">'success'</span>);
   })
   .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
