@@ -1052,7 +1052,7 @@ h2 + .quote {
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
   .show()
   .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">paymentResponse</span>) </span>{
-    <span class="hljs-comment">// Process paymentResponse via gateway, then...</span>
+    <span class="hljs-comment">// Process paymentResponse via gateway/processor, then...</span>
     paymentResponse.complete(<span class="hljs-string">'success'</span>);
   })
   .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
@@ -1232,8 +1232,9 @@ h2 + .quote {
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden  img-with-caption payment-gateways" id="slide-35">
-    <section class="slide-content"><h3 id="payment-gateways">Payment Gateways</h3>
-<p><img src="images/web-payments-parties.png" alt="Payment parties"></p>
+    <section class="slide-content"><p><img src="images/web-payments-parties.png" alt="Payment parties"></p>
+<div class="caption">Payment Gateways / Payment Processors / Payment Service Providers (PSPs)</div>
+
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div>
 
 <!-- img-with-header -->
@@ -1242,8 +1243,9 @@ h2 + .quote {
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
   <div class="slide hidden" id="slide-36">
-    <section class="slide-content"><h3 id="example-payment-gateway-wepay">Example payment gateway: WePay</h3>
+    <section class="slide-content"><h3 id="example-psp-wepay">Example PSP: WePay</h3>
 <p><img src="images/wepay-screenshot.png" alt="WePay docs screenshot"></p>
+<pre><code class="lang-javascript">WePay.wallet.beginTokenization(...);</code></pre>
 <div class="caption"><a href="https://developer.wepay.com/docs/mobile/payment-request-api">developer.wepay.com/docs/mobile/payment-request-api</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>

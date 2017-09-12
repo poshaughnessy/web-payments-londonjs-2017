@@ -178,7 +178,7 @@ var details = {
 new PaymentRequest(methodData, details)
   .show()
   .then(function(paymentResponse) {
-    // Process paymentResponse via gateway, then...
+    // Process paymentResponse via gateway/processor, then...
     paymentResponse.complete('success');
   })
   .catch(function(error) {
@@ -408,9 +408,9 @@ if (paymentRequest.canMakePayment) {
 
 -- img-with-caption payment-gateways
 
-### Payment Gateways
-
 ![Payment parties](images/web-payments-parties.png)
+
+<div class="caption">Payment Gateways / Payment Processors / Payment Service Providers (PSPs)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
@@ -421,9 +421,13 @@ if (paymentRequest.canMakePayment) {
 
 --
 
-### Example payment gateway: WePay
+### Example PSP: WePay
 
 ![WePay docs screenshot](images/wepay-screenshot.png)
+
+```javascript
+WePay.wallet.beginTokenization(...);
+```
 
 <div class="caption">[developer.wepay.com/docs/mobile/payment-request-api](https://developer.wepay.com/docs/mobile/payment-request-api)</div>
 
